@@ -69,7 +69,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_2TryCatch", "_2TryCatch\_2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_2TipoAnonimo", "_2TipoAnonimo\_2TipoAnonimo.csproj", "{4692E98F-6F20-452B-AB0B-8A866C3211FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_2PartialClass", "_2PartialClass\_2PartialClass.csproj", "{51B9AD11-5172-413A-B942-A42E6172F54F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_2PartialClass", "_2PartialClass\_2PartialClass.csproj", "{51B9AD11-5172-413A-B942-A42E6172F54F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F1127D0A-CF22-45E3-967E-6E0399ACB93B}"
+	ProjectSection(SolutionItems) = preProject
+		HealLab.txt = HealLab.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
