@@ -77,81 +77,83 @@ Console.WriteLine("Dictionary\n----------\n");
 //Console.WriteLine("\n6. Remoção dos dados\n-------");
 //Aluno.Remocao(dadosAlunos);
 
-Console.WriteLine("SEGUNDA ABORDAGEM DE SOLUÇÃO\n---------");
+//Console.WriteLine("SEGUNDA ABORDAGEM DE SOLUÇÃO\n---------");
 
-Dictionary<int, Aluno> dados2 = new Dictionary<int, Aluno>()
-{
-    {1, new Aluno("Maria", 7) },
-    {2, new Aluno("Eric", 8) },
-    {3, new Aluno("Ana", 9) },
-    {4, new Aluno("Alex", 0) },
-    {5, new Aluno("Mãe Diná", 5) }
-};
+//Dictionary<int, Aluno> dados2 = new Dictionary<int, Aluno>()
+//{
+//    {1, new Aluno("Maria", 7) },
+//    {2, new Aluno("Eric", 8) },
+//    {3, new Aluno("Ana", 9) },
+//    {4, new Aluno("Alex", 0) },
+//    {5, new Aluno("Mãe Diná", 5) }
+//};
 
 //1. Exibir alunos
-Aluno.ExibirAlunos(dados2);
+//Aluno.ExibirAlunos(dados2);
 
-//2. atualizar nota mãe diná
-do
-{
-    Console.WriteLine("\nInforme o código do aluno desejado (aperte 99 para sair): ");
-    int codigo = Convert.ToInt32(Console.ReadLine());
+////2. atualizar nota mãe diná
+//do
+//{
+//    Console.WriteLine("\nInforme o código do aluno desejado (aperte 99 para sair): ");
+//    int codigo = Convert.ToInt32(Console.ReadLine());
 
-    if(codigo == 99)
-            break;
+//    if(codigo == 99)
+//            break;
 
-    var resultado = dados2.ContainsKey(codigo);
-    if (resultado)
-    {
-        Console.WriteLine("Digite a nota de 1 a 10:");
-        int notaAtualizada = Convert.ToInt32(Console.ReadLine());
-        dados2[codigo].Nota = notaAtualizada;
-        break;
-    }
-    else
-    {
-        Console.WriteLine("Aluno não localizado");
-    }
-} while (true);
-Aluno.ExibirAlunos(dados2);
+//    var resultado = dados2.ContainsKey(codigo);
+//    if (resultado)
+//    {
+//        Console.WriteLine("Digite a nota de 1 a 10:");
+//        int notaAtualizada = Convert.ToInt32(Console.ReadLine());
+//        dados2[codigo].Nota = notaAtualizada;
+//        break;
+//    }
+//    else
+//    {
+//        Console.WriteLine("Aluno não localizado");
+//    }
+//} while (true);
+//Aluno.ExibirAlunos(dados2);
 
 
-public class Aluno
-{
-    public string Nome { get; set; }
-    public int Nota { get; set; }
+//public class Aluno
+//{
+//    public string Nome { get; set; }
+//    public int Nota { get; set; }
 
-    public Aluno(string nome, int nota)
-    {
-        Nome = nome;
-        Nota = nota;
-    }
-    public static void ExibirAlunos(Dictionary<string, double> dic)
-    {
-        foreach (var aluno in dic)
-        {
-            Console.WriteLine($"{aluno.Key} {aluno.Value}");
-        }
-    }
-    public static void ExibirAlunos(Dictionary<int, Aluno> dic)
-    {
-        foreach (var aluno in dic)
-        {
-            Console.WriteLine($"{aluno.Key}\t {aluno.Value.Nome} {aluno.Value.Nota}");
-        }
-    }
+//    public Aluno(string nome, int nota)
+//    {
+//        Nome = nome;
+//        Nota = nota;
+//    }
 
-    public static void Remocao(Dictionary<string, double> dic)
-    {
-        dic.Clear();
-        Console.WriteLine("A lista de alunos foi zerada");
-    }
+//    public static void ExibirAlunos(Dictionary<string, double> dic)
+//    {
+//        foreach (var aluno in dic)
+//        {
+//            Console.WriteLine($"{aluno.Key} {aluno.Value}");
+//        }
+//    }
 
-    public static void Remocao(Dictionary<int, Aluno> dic)
-    {
-        dic.Clear();
-        Console.WriteLine("A lista de alunos foi zerada");
-    }
-}
+//    public static void ExibirAlunos(Dictionary<int, Aluno> dic)
+//    {
+//        foreach (var aluno in dic)
+//        {
+//            Console.WriteLine($"{aluno.Key}\t {aluno.Value.Nome} {aluno.Value.Nota}");
+//        }
+//    }
+
+//    public static void Remocao(Dictionary<string, double> dic)
+//    {
+//        dic.Clear();
+//        Console.WriteLine("A lista de alunos foi zerada");
+//    }
+
+//    public static void Remocao(Dictionary<int, Aluno> dic)
+//    {
+//        dic.Clear();
+//        Console.WriteLine("A lista de alunos foi zerada");
+//    }
+//}
 
 
