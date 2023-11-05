@@ -84,9 +84,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics.Definition", "Gene
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics.GetHashCode&Equals", "Generics.GetHashCode&Equals\Generics.GetHashCode&Equals.csproj", "{94FBBF62-2990-4FD3-ADD0-9788FF0F4E8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics.Dictionary", "Generics.Dictionary\Generics.Dictionary.csproj", "{FA2C89E2-5695-4CBE-BCDC-1067FC873069}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics.Collections.Dictionary", "Generics.Dictionary\Generics.Collections.Dictionary.csproj", "{FA2C89E2-5695-4CBE-BCDC-1067FC873069}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortedDictionary", "SortedDictionary\SortedDictionary.csproj", "{A7509625-892D-4611-B141-36833BAAB88B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics.Collections.SortedDictionary", "SortedDictionary\Generics.Collections.SortedDictionary.csproj", "{A7509625-892D-4611-B141-36833BAAB88B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
