@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Generics.Collections.Stack;
+
 Console.WriteLine("---------Stack---------\n");
 
 //------------------------------------------DEFINIÇÃO------------------------------------
@@ -9,18 +11,41 @@ Console.WriteLine("---------Stack---------\n");
 //permite repetição de elementos
 
 var stac = new Stack<int>();
-stac.Push(1);
-stac.Push(2);
-stac.Push(3);
-stac.Push(9);
-stac.Pop();
+//stac.Push(1);
+//stac.Push(2);
+//stac.Push(3);
+//stac.Push(9);
 
-Exibir(stac);
+//Exibir(stac);
+//Console.WriteLine();
 
-static void Exibir<T>(IEnumerable<T> arr)
-{
-    foreach (var item in arr)
-    {
-        Console.Write(item + " ");
-    }
-}
+//Console.WriteLine($"Peek: {stac.Peek()}");
+//Console.WriteLine($"Pop: {stac.Pop()}");
+//Exibir(stac);
+
+//static void Exibir<T>(IEnumerable<T> arr)
+//{
+//    Console.WriteLine();
+//    foreach (var item in arr)
+//    {
+//        Console.Write(item + " ");
+//    }
+//}
+
+//-----------------------------------EXERCÍCIO----------------------------------
+var teste = new TextEditor();
+Console.WriteLine("\nEscrevendo o texto");
+teste.Write('s');
+teste.Write('t');
+teste.Write('a');
+teste.Write('c');
+teste.Write('h');
+
+Console.WriteLine("\nDesfazendo...");
+teste.Undo();
+teste.Undo();
+
+Console.WriteLine("\nDIgitando novamente...");
+teste.Write('c');
+teste.Write('k');
+teste.Write('!');
