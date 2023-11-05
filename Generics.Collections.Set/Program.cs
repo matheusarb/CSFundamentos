@@ -49,27 +49,38 @@ var timesMundiais = new HashSet<string> { "São Paulo", "Santos", "Palmeiras", "
 
 //if (timesSP.IsSubsetOf(timesMundiais))
 //    Console.WriteLine("timesSP é um subset de timesMundiais");
+//Console.WriteLine("Juntando todos os times");
+//var todosTimes = new HashSet<string>();
+//todosTimes.UnionWith(timesSP);
+//todosTimes.UnionWith(timesRJ);
+//todosTimes.UnionWith(timesBA);
 
-Console.WriteLine("Juntando todos os times");
-var todosTimes = new HashSet<string>();
-todosTimes.UnionWith(timesSP);
-todosTimes.UnionWith(timesRJ);
-todosTimes.UnionWith(timesBA);
+//Console.WriteLine("Exibir todos os times ordenados");
+//var todosTimesOrdenados = new SortedSet<string>(todosTimes);
 
-Console.WriteLine("Exibir todos os times ordenados");
-var todosTimesOrdenados = new SortedSet<string>(todosTimes);
+//Console.WriteLine("\ncoleçaõ times da interseção");
+//timesSP.IntersectWith(timesMundiais);
+//var timesDiferencas = timesMundiais.Except(timesSP);
 
-Console.WriteLine("\ncoleçaõ times da interseção");
-timesSP.IntersectWith(timesMundiais);
-ExibirColecao(timesSP);
+//ExibirColecao();
+
+//----------------------------------------SORTEDSET-----------------------------------------
+Console.WriteLine("\nSortedSet\n--------");
+var impares = new SortedSet<int>();
+for(var i = 6; i > 0; i--)
+{
+    impares.Add(i * 3);
+}
+
+ExibirColecao(impares);
 
 Console.ReadKey();
 
 static void ExibirColecao<T>(IEnumerable<T> colecao)
 {
     Console.WriteLine();
-    foreach (var time in colecao)
+    foreach (var item in colecao)
     {
-        Console.WriteLine($"{time}");
+        Console.Write(item + " ");
     }
 }
