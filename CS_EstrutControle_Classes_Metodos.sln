@@ -84,11 +84,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics.Definition", "Gene
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics.GetHashCode&Equals", "Generics.GetHashCode&Equals\Generics.GetHashCode&Equals.csproj", "{94FBBF62-2990-4FD3-ADD0-9788FF0F4E8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics.Collections.Dictionary", "Generics.Dictionary\Generics.Collections.Dictionary.csproj", "{FA2C89E2-5695-4CBE-BCDC-1067FC873069}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics.Collections.Dictionary", "Generics.Dictionary\Generics.Collections.Dictionary.csproj", "{FA2C89E2-5695-4CBE-BCDC-1067FC873069}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics.Collections.SortedDictionary", "SortedDictionary\Generics.Collections.SortedDictionary.csproj", "{A7509625-892D-4611-B141-36833BAAB88B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics.Collections.SortedDictionary", "SortedDictionary\Generics.Collections.SortedDictionary.csproj", "{A7509625-892D-4611-B141-36833BAAB88B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics.Collections.Set", "Generics.Collections.Set\Generics.Collections.Set.csproj", "{E517B66C-FFC3-495D-8B0C-5FBBF228D3FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics.Collections.Set", "Generics.Collections.Set\Generics.Collections.Set.csproj", "{E517B66C-FFC3-495D-8B0C-5FBBF228D3FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics.Collections.Stack", "Generics.Collections.Stack\Generics.Collections.Stack.csproj", "{643755FF-9F06-495C-BE9C-99572E31D267}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -260,6 +262,10 @@ Global
 		{E517B66C-FFC3-495D-8B0C-5FBBF228D3FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E517B66C-FFC3-495D-8B0C-5FBBF228D3FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E517B66C-FFC3-495D-8B0C-5FBBF228D3FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{643755FF-9F06-495C-BE9C-99572E31D267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{643755FF-9F06-495C-BE9C-99572E31D267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{643755FF-9F06-495C-BE9C-99572E31D267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{643755FF-9F06-495C-BE9C-99572E31D267}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

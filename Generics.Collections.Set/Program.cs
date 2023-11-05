@@ -34,10 +34,10 @@ Console.WriteLine("Coleções Set\n----------");
 
 //Console.WriteLine(conjunto.SetEquals(numeros2));
 //EXERCICIO
-var timesSP = new HashSet<string> { "São Paulo", "Santos", "Palmeiras" };
-var timesRJ = new HashSet<string> { "Vasco", "Botafogo", "Fluminense" };
-var timesBA = new HashSet<string> { "Bahia", "Vitoria" };
-var timesMundiais = new HashSet<string> { "São Paulo", "Santos", "Palmeiras", "Flamengo" };
+//var timesSP = new HashSet<string> { "São Paulo", "Santos", "Palmeiras" };
+//var timesRJ = new HashSet<string> { "Vasco", "Botafogo", "Fluminense" };
+//var timesBA = new HashSet<string> { "Bahia", "Vitoria" };
+//var timesMundiais = new HashSet<string> { "São Paulo", "Santos", "Palmeiras", "Flamengo" };
 
 //if (!timesRJ.Contains("Flamengo"))
 //    timesRJ.Add("Flamengo");
@@ -65,22 +65,22 @@ var timesMundiais = new HashSet<string> { "São Paulo", "Santos", "Palmeiras", "
 //ExibirColecao();
 
 //----------------------------------------SORTEDSET-----------------------------------------
-Console.WriteLine("\nSortedSet\n--------");
-var impares = new SortedSet<int>();
-for(var i = 6; i > 0; i--)
-{
-    impares.Add(i * 3);
-}
+//Console.WriteLine("\nSortedSet\n--------");
+//var impares = new SortedSet<int>();
+//for(var i = 6; i > 0; i--)
+//{
+//    impares.Add(i * 3);
+//}
 
-ExibirColecao(impares);
+//ExibirColecao(impares);
 
-Console.ReadKey();
+//Console.ReadKey();
 
-static void ExibirColecao<T>(IEnumerable<T> colecao)
-{
-    Console.WriteLine();
-    foreach (var item in colecao)
-    {
-        Console.Write(item + " ");
-    }
-}
+//static void ExibirColecao<T>(IEnumerable<T> colecao)
+//{
+//    Console.WriteLine();
+//    foreach (var item in colecao)
+//    {
+//        Console.Write(item + " ");
+//    }
+//}
