@@ -14,18 +14,18 @@ namespace Generics.Collections.Stack
         public void Write(char c)
         {
             text += c;
-            //UndoStack.Push(c);
+            UndoStack.Push(c);
             Console.WriteLine($"Texto: {text}");
         }
 
         public void Undo()
         {
-            //if(UndoStack.Count > 0)
-            //{
-            //    var lastChar = UndoStack.Pop();
-            //}
+            if (UndoStack.Count > 0)
+            {
+                var lastChar = UndoStack.Pop();
                 text = text.Substring(0, text.Length - 1);
                 Console.WriteLine($"Texto: {text}");
+            }
         }
     }
 }
