@@ -7,23 +7,42 @@ Console.WriteLine("---------------ReadOnlyCollection<T>---------------");
 //1. útil para cenários onde desejamos armazenar uma coleção somente para leitura. Não queremos que o usuário modifique acidentalmente
 
 //1. inicialização 1
-var example = new List<int> { 1, 2, 3, 4, 5 };
-var readOnlyCol = new ReadOnlyCollection<int>(example);
-//1.1 inicialização 2
-var rocol2 = example.AsReadOnly();
+//var example = new List<string> { "1", "2", "3", "4", "5" };
+//var readOnlyCol = new ReadOnlyCollection<string>(example);
+////1.1 inicialização 2
+//var rocol2 = example.AsReadOnly();
 
-//operações com readOnlyCollection
+////operações com readOnlyCollection
 
-//copiar array e excluir o último index e o primeiro e segundo
-int[] arr = new int[example.Count - 2];
-readOnlyCol.CopyTo(arr, 2);
+////copiar array e excluir o último index e o primeiro
+//var arr = new string[example.Count  + 2];
+//readOnlyCol.CopyTo(arr, 1);
 
-foreach (var item in arr)
-{
-    Console.Write($"{item} ");
-}
+//foreach (var item in arr)
+//{
+//    Console.WriteLine($"\"{item}\"");
+//}
 
+//Console.ReadKey();
 
+////-------------------EXERCÍCIO---------------------
+//ReadOnlyCollection<Aluno> listaAlunos = new ReadOnlyCollection<Aluno>(Aluno.GetAlunos());
+//foreach(var aluno in listaAlunos)
+//{
+//    Console.WriteLine(aluno.Nome);
+//}
 
-
-Console.ReadKey();
+//public class Aluno
+//{
+//    public string Nome { get; set; } = string.Empty;
+    
+//    public static List<Aluno> GetAlunos()
+//    {
+//        return new List<Aluno>()
+//        {
+//            new Aluno() { Nome="MAtheus" },
+//            new Aluno() { Nome="Luiggi" },
+//            new Aluno() { Nome="Alexandre" }
+//        };
+//    }
+//}
