@@ -35,7 +35,7 @@ Console.WriteLine("---------------ReadOnlyCollection<T>---------------");
 //public class Aluno
 //{
 //    public string Nome { get; set; } = string.Empty;
-    
+
 //    public static List<Aluno> GetAlunos()
 //    {
 //        return new List<Aluno>()
@@ -46,3 +46,4 @@ Console.WriteLine("---------------ReadOnlyCollection<T>---------------");
 //        };
 //    }
 //}
+

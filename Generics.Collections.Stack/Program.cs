@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Generics.Collections.Stack;
+using System.Threading.Channels;
 
 Console.WriteLine("---------Stack---------\n");
 
@@ -33,19 +34,46 @@ var stac = new Stack<int>();
 //}
 
 //-----------------------------------EXERCÍCIO----------------------------------
-var teste = new TextEditor();
-Console.WriteLine("\nEscrevendo o texto");
-teste.Write('s');
-teste.Write('t');
-teste.Write('a');
-teste.Write('c');
-teste.Write('h');
+//var teste = new TextEditor();
+//Console.WriteLine("\nEscrevendo o texto");
+//teste.Write('s');
+//teste.Write('t');
+//teste.Write('a');
+//teste.Write('c');
+//teste.Write('h');
 
-Console.WriteLine("\nDesfazendo...");
-teste.Undo();
-teste.Undo();
+//Console.WriteLine("\nDesfazendo...");
+//teste.Undo();
+//teste.Undo();
 
-Console.WriteLine("\nDIgitando novamente...");
-teste.Write('c');
-teste.Write('k');
-teste.Write('!');
+//Console.WriteLine("\nDIgitando novamente...");
+//teste.Write('c');
+//teste.Write('k');
+//teste.Write('!');
+
+//-------------EXERCÍCIO--------------------
+//var fila = new Stack<char>();
+//fila.Push('(');
+//fila.Push('{');
+//fila.Push('[');
+
+//for(var i = 0; i < fila.Count; i++)
+//{
+
+//}
+
+////-------------EXERCÍCIO--------------------
+//var filaImp = new Queue<string>();
+//filaImp.Enqueue("Primeiro arquivo");
+//filaImp.Enqueue("Segundo arquivo");
+//filaImp.Enqueue("Terceiro arquivo");
+//while (filaImp.Count > 0)
+//{    
+//    var firstEl = filaImp.Dequeue();
+//    Console.WriteLine($"\nO arquivo {firstEl} está sendo impresso...");
+//    Thread.Sleep(1000);
+//    Console.WriteLine($"O arquivo {firstEl} foi impresso com sucesso");
+    
+//}
+//Thread.Sleep(1000);
+//Console.WriteLine("\nImpressões finalizadas");
