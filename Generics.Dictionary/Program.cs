@@ -88,30 +88,30 @@ Console.WriteLine("Dictionary\n----------\n");
 //    {5, new Aluno("Mãe Diná", 5) }
 //};
 
-//1. Exibir alunos
+//1.Exibir alunos
 //Aluno.ExibirAlunos(dados2);
 
 ////2. atualizar nota mãe diná
 //do
 //{
-//    Console.WriteLine("\nInforme o código do aluno desejado (aperte 99 para sair): ");
-//    int codigo = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("\nInforme o código do aluno desejado (aperte 99 para sair): ");
+//int codigo = Convert.ToInt32(Console.ReadLine());
 
-//    if(codigo == 99)
-//            break;
+//if (codigo == 99)
+//break;
 
-//    var resultado = dados2.ContainsKey(codigo);
-//    if (resultado)
-//    {
-//        Console.WriteLine("Digite a nota de 1 a 10:");
-//        int notaAtualizada = Convert.ToInt32(Console.ReadLine());
-//        dados2[codigo].Nota = notaAtualizada;
-//        break;
-//    }
-//    else
-//    {
-//        Console.WriteLine("Aluno não localizado");
-//    }
+//var resultado = dados2.ContainsKey(codigo);
+//if (resultado)
+//{
+//Console.WriteLine("Digite a nota de 1 a 10:");
+//int notaAtualizada = Convert.ToInt32(Console.ReadLine());
+//dados2[codigo].Nota = notaAtualizada;
+//break;
+//}
+//else
+//{
+//Console.WriteLine("Aluno não localizado");
+//}
 //} while (true);
 //Aluno.ExibirAlunos(dados2);
 
