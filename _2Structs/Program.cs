@@ -6,10 +6,11 @@
 // A PRINCIPAL DIFERENÇA entre CLASSE e STRUCTS é que structs são TIPOS DE VALOR, e não de referência
 // A alocação de memória é feita na Stack(tipo de valor), e não na Heap(tipo de referência)
 // QUando usar uma Struct ao invés de classe?
-//1. QUando representar, logicamente, um único valor, semelhante aos tipos primiticos (int, double etc...)
-//2. QQuando tiver um tamanho de instância inferior a 16 bytes
+//1. QUando representar, logicamente, um único valor, semelhante aos tipos primitivos (int, double etc...)
+//2. Quando tiver um tamanho de instância inferior a 16 bytes
 //3. Quando for IMUTÁVEL
-//4. QUando não precisar sofrer CONVERSÕES PARA TIPO DE REFERÊNCIA(boxing) com frequência
+//4. Quando não precisar sofrer CONVERSÕES PARA TIPO DE REFERÊNCIA(boxing) com frequência
+
 //Cliente cliente = new();
 //cliente.Nome = "maria";
 //cliente.Idade = 28;
