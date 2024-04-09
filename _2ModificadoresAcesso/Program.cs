@@ -1,6 +1,6 @@
 ﻿using _2ModificadoresAcesso;
 
-Console.WriteLine("Modificadores de acesso\n---------");
+//Console.WriteLine("Modificadores de acesso\n---------");
 
 // 1. public - tipo ou membro pode ser acessado por qualquer outro código dentro do mesmo assembly ou em outro assembly que fizer referência a ele
 // 2. private - tipo ou membro só poderá ser acesso pelo código na mesma classe o struct em q foi declarado
@@ -13,6 +13,5 @@ Console.WriteLine("Modificadores de acesso\n---------");
 // Limitar acesso apenas ao que for necessário;
 // Expor apenas o que precisar ser exposto;
 
-MinhaClasse classe = new MinhaClasse();
-classe.
+//MinhaClasse classe = new MinhaClasse();
 //Console.WriteLine(MeuEnum.teste1);
